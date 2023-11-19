@@ -1,2 +1,2 @@
 # Zunkin
-A simple minecraft luncher by python.
+A simple minecraft launcher by python.
