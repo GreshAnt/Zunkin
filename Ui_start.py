@@ -36,7 +36,13 @@ class Ui_Form(object):
         self.PushButton.setFont(font)
         self.label = QLabel(Form)
         self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(0, 30, 750, 350))
+        self.label.setGeometry(QRect(0, 15, 750, 350))
+        self.VerSet = PushButton(Form)
+        self.VerSet.setObjectName(u"VerSet")
+        self.VerSet.setGeometry(QRect(440, 440, 102, 41))
+        self.VerCon = PushButton(Form)
+        self.VerCon.setObjectName(u"VerCon")
+        self.VerCon.setGeometry(QRect(440, 380, 102, 41))
 
         self.retranslateUi(Form)
 
@@ -47,5 +53,7 @@ class Ui_Form(object):
         Form.setWindowTitle(QCoreApplication.translate("Form", u"Form", None))
         self.PushButton.setText(QCoreApplication.translate("Form", u"\u542f\u52a8\u6e38\u620f", None))
         self.label.setText("")
+        self.VerSet.setText(QCoreApplication.translate("Form", u"\u7248\u672c\u8bbe\u7f6e", None))
+        self.VerCon.setText(QCoreApplication.translate("Form", u"\u7248\u672c\u9009\u62e9", None))
     # retranslateUi
 

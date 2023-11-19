@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QLabel, QApplication, QMainWindow, QPushButton, QVBoxLayout, QStackedWidget
+from PySide6.QtWidgets import QLabel, QApplication, QMainWindow, QPushButton, QVBoxLayout
 from Ui_main import Ui_Zunkin
 from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
     QMetaObject, QObject, QPoint, QRect,
@@ -9,20 +9,20 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QSizePolicy, QWidget)
 from qfluentwidgets import (BodyLabel, LineEdit, PushButton, SplitFluentWindow)
-from Ui_start import Ui_Form
+from Ui_download import Ui_download
 from PIL import Image, ImageQt
-from Ui_verset import Ui_Form_VerSet
 
-class Start(QWidget, Ui_Form):
+class Download(QWidget, Ui_download):
 
     def __init__(self, parent=None):
         super().__init__(parent=parent)
         self.setupUi(self)
 
-        self.img = Image.open('./data/bg.png')
-        self.label.setPixmap(ImageQt.toqpixmap(self.img))
-
-
-        # self.VerSet.clicked.connect(self.vertion_contrl)
-
-
+        # self.AutoInstall.isChecked.connect(self.set_no_check(self.AutoInstall))
+        # self.Mod.isChecked.connect(self.set_no_check(self.Mod))
+        # self.Pack.isChecked.connect(self.set_no_check(self.PAck))
+    # def set_no_check(self, org):
+    #     self.AutoInstall.setChecked == False
+    #     self.Mod.setChecked == False
+    #     self.Pack.setChecked == False
+    #     org == True
